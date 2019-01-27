@@ -17,14 +17,23 @@ body{
     text-align: center;
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
 ul > li{
     display: inline-block;
     padding: 10px;
-    width: 90px;
+    width: 100px;
     border-right: 2px solid #c30006;
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: #E50018;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 ul > li:first-child{
