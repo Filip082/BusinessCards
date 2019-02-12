@@ -1,0 +1,26 @@
+body{
+    background-image: url("footer_lodyas.png");
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+
+    display: grid;
+    grid-template-columns: [Line1] 25% [Line2] 25% [Line3] 25% [Line1] 25% [Line4];
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.rectangle{
+    grid-column-start: Line1;
+    grid-column-end: Line4;
+    display: flex;
+    justify-content: space-between;
+}
+.tile1{
+    
+    background-color: #3095d3;
+}
+
+.tile1:hover{
+    background-color: #2084c2;
+}
