@@ -3,24 +3,67 @@ body{
     color: #fff;
     font-family: 'Inconsolata', monospace;
     font-size: 3em;
-
+}
+.grid{
     display: grid;
     grid-template-columns: [Line1] 25% [Line2] 25% [Line3] 25% [Line1] 25% [Line4];
-    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-auto-rows: 304px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+.container{
+    margin: 0px;
+}
 .rectangle{
-    grid-column-start: Line1;
-    grid-column-end: Line4;
     display: flex;
     justify-content: space-between;
 }
-.tile1{
-    
+.tile1{    
     background-color: #3095d3;
+    grid-column: auto / span 2
 }
 
 .tile1:hover{
+    background-color: #2084c2;
+}
+.tile4{
+    background-color: #ee5a32;
+    grid-column: auto / span 4;
+}
+
+.tile5{
+    background-color: #666;
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+}
+.yt{
+    background-color: #d94348;
+}
+
+.yt:hover{
+    background-color: #c83237;
+}
+
+.fb{
+    background-color: #4668b3;
+}
+
+.fb:hover{
+    background-color: #3557a2;
+}
+
+.gplus{
+    background-color: #d95333;
+}
+
+.gplus:hover{
+    background-color: #c84222;
+}
+
+.tw{
+    background-color: #3095d3;
+}
+
+.tw:hover{
     background-color: #2084c2;
 }
